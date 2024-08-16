@@ -1,0 +1,17 @@
+public class Task {
+    public static void main(String []args){
+       int []array={1,2,3,4,5};
+       int start=0,end=array.length-1;
+       int temp;
+       while(start<end){
+           temp=array[start];
+           array[start]=array[end];
+           array[end]=temp;
+           start++;
+           end--;
+       }
+       for(int a:array){
+           System.out.print(a+" ");
+       }
+    }
+}
